@@ -46,7 +46,7 @@ module.exports.connections = {
     port: 3306,
     user: 'samappuser', //optional
     password: 'samappass', //optional
-    database: 'samapp_def' //optional
+    database: 'samappp_def' //optional
    },
   /***************************************************************************
   *                                                                          *
