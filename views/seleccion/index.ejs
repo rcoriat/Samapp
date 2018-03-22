@@ -1,0 +1,28 @@
+<div id="container">
+        <h3>Selección</h3>
+        <a class="button" href="/"> Regresar </a>
+        <br><br> <br>
+        <table>
+          <tr>
+          <th>ID</th>
+          <th>disciplina</th>
+          <th>Estudiante</th>
+          <th>Nothing</th>
+        
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <% _.each(seleccion,function(seleccion){ %>
+          <tr data=id="<%= seleccion.id %>" data-model="seleccion">
+          <td><%= seleccion.id %></td>
+          <td><%= seleccion.disciplina %></td>
+          <td></td>
+          <td>nothing</td>
+        
+          <td><a class="button" href="/estudiante/show/<%= estudiante.id %>">Mostrar</a></td>
+          <td><a class="button" href="/estudiante/edit/<%= estudiante.id %>"> Editar  </a></td>
+        </tr>
+        <% }) %>
+        </table>
+        </div>

@@ -1,0 +1,58 @@
+<div id="container">
+
+  <h1><%= 'Nombre: '+profesor.nombre %></h1>
+  <hr>
+  <h1><%= 'Apellido: '+profesor.apellido %></h1>
+  <hr>
+  <h2><%= 'Cedula: '+profesor.cedula %></h2>
+  <hr>
+  <h3><%= 'Correo: '+profesor.email%></h3>
+  <hr>
+  <h3><%= 'Telefono ' +profesor.telefono %></h3>
+  <hr>
+  
+  <form action="/estructura/new" method="POST">
+    <input type="hidden" value= "<%=profesor.id %>" name="profesor">
+    <input type="submit" class="btn btn-default" value= "Agregar estructura" />
+  </form>
+  
+  </div>
+  
+  <div id="container">
+    <form action="/estructura/new" method="POST">
+      <input type="hidden" value= "<%= profesor.id %>" name="profesor">
+  
+  
+      <h3> estructura</h3>
+  <table>
+  <tr>
+    <th> ID </th>
+    <th> nombre </th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <% _.each(profesor.estructura,function(estructura){ %>
+    <tr data=id="<%=estructura.id %>" data-model="estructura">
+    <td><%= estructura.id %></td>
+    <td><%= estructura.nombre %></td>
+    <td><a href="estructura/show/<%= estructura.id %>">Mostrar</a></td>
+    <td><a href="estructura/edit/<%= estructura.id %>">Editar  </a></td>
+    <td><a href="estructura/destroy/<%= estructura.id %>">Eliminar</a></td>
+  </tr>
+  <% }) %>
+  </table>
+  
+  <input type="submit" class="btn btn-success" value= "Agregar estructura" />
+    </form>
+  
+  
+  
+  </div>
+  <div id="container">
+  <a class="button" class="btn btn-default" href="/profesor"> Regresar </a>
+  </div>
+  
+ 
+
+  

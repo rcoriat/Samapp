@@ -1,0 +1,30 @@
+<div id="container">
+
+        <form action="/seleccion/create" method="POST">
+          <h2> Agregar Nueva Seleccion Para <%= estudiante.nombre+" "+estudiante.apellido %></h2>
+        </div>
+        <div id="container">
+        <h4> disciplina </h4>
+        <hr>
+          <input type="hidden" name="estudiante" value="<%-estudiante.id %>"/>
+         <input type="radio" name="disciplina" value="futbol"> futbol
+          <input type="radio" name="disciplina" value="baloncesto"> baloncesto
+         <input type="radio" name="disciplina" value="volleyball"> volleyball
+          <input type="radio" name="disciplina" value="futbol sala"> futbol sala
+          <input type="radio" name="disciplina" value="karate"> karate
+          <input type="radio" name="disciplina" value="tenis"> tenis
+          <input type="radio" name="disciplina" value="beisbol"> beisbol
+          <input type="radio" name="disciplina" value="kickingall"> kickingall
+          <input type="radio" name="disciplina" value="tenis de mesa"> tenis de mesa <br />
+
+          <label>Peso</label>
+          <input type="text" name="peso" class="form-control"  required>  <br />
+          <label>Altura</label>
+          <input type="text" name="altura" class="form-control"  required>  <br />
+        </div>
+        
+          <input type="submit" value="Agregar selección"/>
+        
+        </form>
+        </div>
+        

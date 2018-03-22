@@ -1,0 +1,22 @@
+<div class="container">
+
+        <form action="/profesor/update/<%=profesor.id%>" method="POST" accept-charset="utf-8" class="form-singin">
+            <label>Cedula</label>
+            <input type="text" name="cedula" class="form-control" value="<%=profesor.cedula%>" required>
+            <label>Nombre</label>
+            <input type="text" name="nombre" class="form-control" value="<%=profesor.nombre%>" required>
+            <label>Apellido</label>
+            <input type="text" name="apellido" class="form-control" value="<%=profesor.apellido%>" required>
+            <label>Email</label>
+            <input type="text" name="email" class="form-control" value="<%=profesor.email%>" required>
+            <label>Telefono</label>
+            <input type="text" name="telefono" class="form-control" value="<%=profesor.telefono%>" required>
+            <label>Especialidad</label>
+            <input type="text" name="especialidad" class="form-control" value="<%=profesor.especialidad%>" required>
+        </br>
+        <input type="submit" class="btn btn-default"/>
+    
+    
+    </form>
+    
+    </div>

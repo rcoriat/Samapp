@@ -1,0 +1,36 @@
+
+<div id="container">
+<form action="/becado/create" method="POST">
+  <h2> Agregar Tipo de Beca Para <%= estudiante.nombre+" "+estudiante.apellido %></h2>
+
+  <input  type="hidden" name="estudiante" value="<%-estudiante.id %>"/>
+  <br>
+  <input type="radio" name="tipo" value="Academica"> Academica<br />
+  <br>
+  <input type="radio" name="tipo" value="Deportiva"> Deportiva<br />
+  <br>
+  <input type="radio" name="tipo" value="Artistica"> Artistica<br />
+  <br>
+  <input type="radio" name="tipo" value="Compromiso Civico"> Compromiso Civico<br />
+  <br>
+  <input type="radio" name="tipo" value="Emprendimiento"> Emprendimiento<br />
+  <br>
+  <input type="radio" name="tipo" value="Matricula de Honor"> Matricula de Honor<br />
+  <br>
+  <input type="radio" name="tipo" value="Desempeño"> Desempeño<br />
+  <br>
+  <h2> Porcentaje de Beca </h2>
+  <input type="radio" name="porcentaje" value="100"> 100 % <br />
+  <br>
+  <input type="radio" name="porcentaje" value="75"> 75 %<br />
+  <br>
+  <input type="radio" name="porcentaje" value="50"> 50 %<br />
+  <br>
+  <input type="radio" name="porcentaje" value="25"> 25 %<br />
+  <br>
+
+  <input type="submit" value="agregar becado"/>
+
+
+</form>
+</div>

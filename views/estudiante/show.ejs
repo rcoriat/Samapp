@@ -1,0 +1,60 @@
+<div id="container">
+
+    <h1><%= 'Nombre: '+estudiante.nombre %></h1>
+    <hr>
+    <h1><%= 'Apellido: '+estudiante.apellido %></h1>
+    <hr>
+    <h2><%= 'Cedula: '+estudiante.cedula %></h2>
+    <hr>
+    <h3><%= 'Correo: '+estudiante.email%></h3>
+    <hr>
+    <h3><%= 'Telefono ' +estudiante.telefono %></h3>
+    <hr>
+    <div>
+    <form action="/becado/new" method="POST" class="">
+      <input type="hidden" value= "<%=estudiante.id %>" name="estudiante">
+      <input type="submit" class="btn btn-default" value= "Agregar becado" id="becado"/>
+    </form>
+  </div>
+    </div>
+    
+    <div id="container">
+      <form action="/seleccion/new" method="POST">
+        <input type="hidden" value= "<%= estudiante.id %>" name="estudiante">
+    
+    
+        <h3> SELECCION</h3>
+    <table>
+    <tr>
+      <th> ID </th>
+      <th> Disciplina </th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <% _.each(estudiante.seleccion,function(seleccion){ %>
+      <tr data=id="<%=seleccion.id %>" data-model="seleccion">
+      <td><%= seleccion.id %></td>
+      <td><%= seleccion.disciplina %></td>
+      <td><a href="seleccion/show/<%= seleccion.id %>">Mostrar</a></td>
+      <td><a href="seleccion/edit/<%= seleccion.id %>">Editar  </a></td>
+      <td><a href="seleccion/destroy/<%= seleccion.id %>">Eliminar</a></td>
+    </tr>
+    <% }) %>
+    </table>
+    
+    <input type="submit" class="btn btn-success" value= "Agregar Seleccion" />
+      </form>
+    
+    
+    
+    </div>
+    <div id="container">
+    <a class="button" class="btn btn-default" href="/estudiante"> Regresar </a>
+    </div>
+
+    <div>
+      <% if(estudiante.becado) { %>
+      <% console.log("error")%>
+      <% }%>
+    </div>

@@ -1,0 +1,43 @@
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Menu Estudiante</title>
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+
+  <body>
+    <h1>Bienvenido a SAMAPP <%=estudiante.nombre%> </h1>
+    <h4>En que te podemos samear?</h4>
+    
+    <form class="cf" action="/estudiante" method="post">
+      <input type="submit" value="Revisar Historia" id="input-submit">
+      <input type="hidden" name="cedulaEstudiante" value=<%=estudiante.cedula%> >
+    </form>
+    
+    <form class="cf" action='/estudiante' method="post" >
+      <input type="submit" value="Revisar Datos Personales" id="input-submit">
+      <input type="hidden" name="cedulaEstudiante" value=<%=estudiante.cedula%> >
+    </form>
+   
+    <form class="cf" action='/estudiante'method="post" >
+      <input type="submit" value="Administrar condiciones medicas" id="input-submit">
+      <input type="hidden" name="cedulaEstudiante" value=<%=estudiante.cedula%> >
+    </form>
+   
+    <form class="cf" action='/estudiante'method="post" >
+      <input type="submit" value="Ver familiares" id="input-submit">
+      <input type="hidden" name="cedulaEstudiante" value=<%=estudiante.cedula%> >
+    </form>
+
+    <form class="cf" action='/estudiante' method="post" >
+      <input type="submit" value="Administrar intervenciones medicas pasadas" id="input-submit">
+      <input type="hidden" name="cedulaEstudiante" value=<%=estudiante.cedula%> >
+    </form>
+
+    <form class="cf" action="/">
+      <input type="submit" value="Salir del Sistema" id="salir">
+    </form>
+  </body>
+
+</html>

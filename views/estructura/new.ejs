@@ -1,0 +1,19 @@
+
+<div id="container">
+  <form action="/estructura/create" method="POST">
+    <h2> Agregar Tipo de Estructura Para <%= profesor.nombre+" "+profesor.apellido %></h2>
+  
+    <input  type="hidden" name="profesor" value="<%-profesor.id %>"/>
+    <br>
+    <input type="radio" name="nombre" value=" Departamento de Matematica"> Departamento de Matematica<br />
+    <br>
+    <input type="radio" name="nombre" value="Departamento de Fisica"> Departamento de Fisica <br />
+    <br>
+    <input type="radio" name="nombre" value="Facultad de procesos y sistemas"> Facultad de ingenieria<br />
+    <br>
+
+    <input type="submit" value="agregar estructura"/>
+  
+  
+  </form>
+  </div>
