@@ -1,5 +1,4 @@
-.DS_Store
-/Users/raquelcoriat/Desktop/Samapp/api/.DS_Store
-/Users/raquelcoriat/Desktop/Samapp/assets/.DS_Store
-/Users/raquelcoriat/Desktop/Samapp/config/.DS_Store
-/Users/raquelcoriat/Desktop/Samapp/tasks/.DS_Store
+/api/.DS_Store
+/assets/.DS_Store
+/config/.DS_Store
+/tasks/.DS_Store
