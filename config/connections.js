@@ -42,11 +42,10 @@ module.exports.connections = {
   ***************************************************************************/
   someMysqlServer: {
     adapter: 'sails-mysql',
-    host: 'samapp.cxclssxchmua.us-east-2.rds.amazonaws.com',
-    port: 3306,
-    user: 'samappuser', //optional
-    password: 'samappass', //optional
-    database: 'samappp_def' //optional
+    host: '127.0.0.1',
+    post:3306,
+    user: 'root', 
+    password: 'sqlcontra' 
    },
   /***************************************************************************
   *                                                                          *
